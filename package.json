@@ -1,0 +1,24 @@
+{
+  "name": "toolbox-challenge-backend",
+  "version": "0.1.0",
+  "description": "a Toolbox challenge",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegoiglesiasrojo/Toolbox-Challenge-Backend.git"
+  },
+  "author": "Diego Iglesias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegoiglesiasrojo/Toolbox-Challenge-Backend/issues"
+  },
+  "homepage": "https://github.com/diegoiglesiasrojo/Toolbox-Challenge-Backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
