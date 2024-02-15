@@ -2,8 +2,7 @@ const express = require("express");
 const cors = require("cors");
 
 const constants = require("./constants");
-// import constants from "./constants.js";
-// const router = require("./route/index.js");
+const router = require("./route/index.js");
 
 const app = express();
 
@@ -14,4 +13,4 @@ app.listen(constants.port, constants.host, () => {
 app.use(cors());
 app.use(express.json());
 
-// app.use("/api", router);
+app.use("/files", router);
