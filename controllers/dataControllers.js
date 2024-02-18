@@ -61,14 +61,14 @@ const dataControllers = {
       });
 
       // Send formated data
-      res.json({
+      res.status(200).json({
         success: true,
         response: arrayOfDataWithoutNull,
         error: false,
       });
     } else {
       // General error
-      res.json({ success: false, response: null, error: true });
+      res.status(500).json({ success: false, response: null, error: true });
     }
   },
 };
