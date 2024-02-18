@@ -1,5 +1,6 @@
 const http = require("http");
 const csvtojson = require("csvtojson");
+const constants = require("../constants");
 
 const oneFile = async (fileName) => {
   return new Promise((resolve, reject) => {
@@ -10,7 +11,7 @@ const oneFile = async (fileName) => {
       method: "GET",
       mode: "cors",
       headers: {
-        Authorization: "Bearer aSuperSecretKey",
+        Authorization: `Bearer ${constants.secretOrKey}`,
       },
     };
 
