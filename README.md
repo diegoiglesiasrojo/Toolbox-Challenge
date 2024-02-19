@@ -20,7 +20,24 @@ Authentication not required
 
 - Run testing with command npm test
 
-### Version:
+## Endpoints:
+
+#### Read data
+
+- GET method
+
+- localhost:4000/files/data
+
+- Authentication not required
+
+- Body not required
+
+- Recieve:
+  {success: true, error: false, response: [{file: "test2.csv", lines: [{text: "DBcWSQkVVyBwGC", number: "80577", hex: "6ada8a32ca60188f3c497f8832c90902"}]}, {...}, {...} ...]}
+
+## Version:
+
+- v1.0.1 | Modified README.md file.
 
 - v1.0.0 | Added README.md file.
 
