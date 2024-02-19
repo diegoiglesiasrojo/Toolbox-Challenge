@@ -1,6 +1,6 @@
 {
   "name": "toolbox-challenge-backend",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "a Toolbox challenge",
   "main": "server.js",
   "scripts": {

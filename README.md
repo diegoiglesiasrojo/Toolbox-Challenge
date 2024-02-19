@@ -35,7 +35,22 @@ Authentication not required
 - Recieve:
   {success: true, error: false, response: [{file: "test2.csv", lines: [{text: "DBcWSQkVVyBwGC", number: "80577", hex: "6ada8a32ca60188f3c497f8832c90902"}]}, {...}, {...} ...]}
 
+#### Read files list
+
+- GET method
+
+- localhost:4000/files/list
+
+- Authentication not required
+
+- Body not required
+
+- Recieve:
+  {success: true, error: false, response: {files: ["test1.csv", "test2.csv", "test3.csv",...]}}
+
 ## Version:
+
+- v1.1.0 | Created files list endpoint.
 
 - v1.0.1 | Modified README.md file.
 

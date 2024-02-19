@@ -71,6 +71,23 @@ const dataControllers = {
       res.status(500).json({ success: false, response: null, error: true });
     }
   },
+
+  readFileList: async (req, res) => {
+    // Getting list of files
+    const responseFileList = await fileList();
+
+    // First we evaluate that the first endpoint works well
+    if (Object.keys(responseFileList).includes("files")) {
+      res.status(200).json({
+        success: true,
+        response: responseFileList,
+        error: false,
+      });
+    } else {
+      // General error
+      res.status(500).json({ success: false, response: null, error: true });
+    }
+  },
 };
 
 module.exports = dataControllers;

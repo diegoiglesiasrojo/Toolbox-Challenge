@@ -4,4 +4,6 @@ const dataControllers = require("../controllers/dataControllers.js");
 
 router.route("/data").get(dataControllers.readData);
 
+router.route("/list").get(dataControllers.readFileList);
+
 module.exports = router;
